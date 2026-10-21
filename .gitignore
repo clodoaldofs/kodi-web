@@ -1,0 +1,36 @@
+
+# Dependências
+node_modules/
+frontend/node_modules/
+
+# Next.js
+.next/
+frontend/.next/
+out/
+frontend/out/
+
+# Builds
+dist/
+build/
+coverage/
+
+# Variáveis de ambiente
+.env
+.env.*
+!.env.example
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# Ferramentas
+.vercel/
+.turbo/
+*.log
+*.tsbuildinfo
+
+# Sistema e editores
+.DS_Store
+Thumbs.db
+.idea/
+*.swp
+*.swo
