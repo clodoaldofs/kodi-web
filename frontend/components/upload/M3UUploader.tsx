@@ -35,11 +35,9 @@ export default function M3UUploader({
         e.target?.result as string
 
       const parsedChannels =
-        parseM3U(content)
-
-      onChannelsLoaded(parsedChannels)
+	  await parseM3U(content)
+	onChannelsLoaded(parsedChannels)
     }
-
     reader.readAsText(file)
   }
 
@@ -68,8 +66,7 @@ export default function M3UUploader({
       ) {
 
         const parsedChannels =
-          parseM3U(content)
-
+          await parseM3U(content)
         onChannelsLoaded(parsedChannels)
       }
 
